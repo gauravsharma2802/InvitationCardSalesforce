@@ -1,0 +1,44 @@
+.rsvp_details{
+    padding: 24px;
+    background: #fff;
+}
+
+.rsvp_details form{
+    max-width: 700px;
+    margin: auto;
+    padding: 24px;
+}
+.rsvp_details  h2{
+    font-size: 40px;
+    font-family: cursive;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    color: #447663;
+    text-align: center;
+}
+.rsvp_details .subheading{
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 4px;
+    color: #555555;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    opacity: 0.8;
+
+}
+.rsvp_details button{
+    background: #54927a;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+
+}
+.footer{
+    text-align: center;
+    margin-top: 24px;
+}
+.rsvpMessage{
+    text-align: center;
+    font-size: 24px;
+    color: #555;
+}

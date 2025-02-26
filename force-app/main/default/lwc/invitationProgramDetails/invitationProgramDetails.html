@@ -1,0 +1,43 @@
+<template>
+    <div class="program_details">
+         <h2>Program Details</h2>
+         <template for:each={programList} for:item="program">
+             <lightning-layout multiple-rows key={program.Id}>
+                 <lightning-layout-item size="12" small-device-size="6">
+                     <h3>{program.Name}</h3>
+                 </lightning-layout-item>
+                 <lightning-layout-item size="12" small-device-size="6">
+                    <div class="date-time">
+                         <p>
+                             <lightning-formatted-date-time
+                             value={program.Program_Date__c}
+                             year="numeric"
+                             day="2-digit"
+                             month="2-digit">
+                         </lightning-formatted-date-time>
+                         </p>
+                         <p class="subtext">
+                             <lightning-formatted-date-time
+                             value={program.Program_Start_Time__c}
+                             hour="2-digit"
+                             minute="2-digit"
+                             time-zone="UTC">
+                         </lightning-formatted-date-time>
+                         <template lwc:if={program.Program_End_Time__c}>
+                             &nbsp;-&nbsp;
+                             <lightning-formatted-date-time
+                             value={program.Program_End_Time__c}
+                             hour="2-digit"
+                             minute="2-digit"
+                             time-zone="UTC">
+                         </lightning-formatted-date-time>
+                         </template>
+                         
+                             </p>
+                    </div>
+                 </lightning-layout-item>
+             </lightning-layout>
+         </template>
+         
+    </div>
+ </template>

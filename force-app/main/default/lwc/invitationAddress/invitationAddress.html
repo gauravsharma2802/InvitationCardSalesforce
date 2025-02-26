@@ -1,0 +1,45 @@
+<template>
+   
+    <div class="address_details">
+        <h2>Address</h2>
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="12" medium-device-size="6">
+                <div class="google-maps">
+                    <!-- <iframe src={addressDetails.Event_Map_URL__c}
+                    width="100%"
+                    height="100%"
+                    style="border:0"
+                    allowfullscreen
+                    loading="lazy"
+                    ></iframe> -->
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28783.23465394331!2d76.24824340920547!3d31.470726651119968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391ad053bccff95d%3A0x4be9fd7ce7d7390e!2sUna%2C%20Himachal%20Pradesh%20174303%2C%20India!5e1!3m2!1sen!2sca!4v1740415423967!5m2!1sen!2sca"
+            width="100%" 
+            height="250" 
+            style="border:0;"
+             allowfullscreen
+              loading="lazy" >
+    </iframe>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" medium-device-size="6">
+                <section class="address">
+                    <p class="heading">Address</p>
+                    
+                    <p class="subtext">
+                        <lightning-icon icon-name='utility:location' alternative-text='location' size='x-small' 
+                    title='location' class="slds-m-right_x-small"></lightning-icon>
+                        {addressDetails.Event_Address__c}
+                    </p>
+                </section>
+                <section class="contact">
+                    <p class="heading">Contact</p>
+                    
+                    <p class="subtext"><lightning-icon icon-name='utility:phone_portrait' alternative-text='phone_portrait' size='x-small' 
+                        title='phone_portrait' class="slds-m-right_x-small"></lightning-icon>
+                        {addressDetails.Contact_Number__c}</p>
+                </section>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+</template>

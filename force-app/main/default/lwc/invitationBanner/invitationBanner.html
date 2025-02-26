@@ -1,0 +1,45 @@
+<template>
+    <div class="banner" style={bannerImageStyle}>
+      <div class="main-details">
+          <div class="social">
+            <a href={facebookUrl} target="_blank" lwc:if={facebookUrl}>
+              <img src={facebook} alt="facebook" />
+             </a>
+             <a href={twitterUrl} target="_blank" lwc:if={twitterUrl}>
+                <img src={twitter} alt="twitter" />
+             </a>
+             <a href={instagramUrl} target="_blank" lwc:if={instagramUrl}>
+                <img src={instagram} alt="instagram"  /> 
+            </a>
+             <img src={instagram} alt="instagram" />
+        </div>
+        
+          <div class="wedding-info">
+          <p>{invitationDetails.Greeting_Message__c}</p>
+          <h1>{invitationDetails.Event_Introduction__c}
+                <em>{invitationDetails.Event_Participants__c}</em>
+           </h1>
+
+           <h4>
+            <lightning-formatted-date-time value=
+            {invitationDetails.Event_Date_and_Time__c} year="numeric" day="2-digit" month="long" hours="2-digit" minute="2-digit">
+        </lightning-formatted-date-time></h4>
+    </div>
+
+          <div class="countdown">
+            <div class="container_count">
+                <div id="days">{days}</div>days
+            </div>
+            <div class="container_count">
+                <div id="hours">{hours}</div>hours
+            </div>
+            <div class="container_count">
+                <div id="minutes">{minutes}</div>minutes
+            </div>
+            <div class="container_count last">
+                <div id="seconds">{seconds}</div>seconds
+            </div>
+        </div>
+      </div>
+    </div>
+</template>

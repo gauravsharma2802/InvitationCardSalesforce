@@ -1,0 +1,31 @@
+.program_details{
+    text-align: center;
+    padding: 32px 16px;
+    background: #fff;
+}
+.program_details h2{
+    font-size: 40px;
+    font-family: cursive;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    color: #447663;
+}
+.program_details h3{
+    font-size: 24px;
+    color: #54927a;
+}
+.program_details .date-time{
+    font-size: 20px;
+    color: #54927a;
+    font-weight: 500;
+}
+.program_details p.subtext{
+    color: #777;
+    font-size: 16px;
+}
+.program_details lightning-layout{
+    padding: 16px 0px;
+}
+.program_details lightning-layout:not(:last-child){
+    border-bottom: 4px dotted #cdcdcd;
+}

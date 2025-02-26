@@ -1,0 +1,97 @@
+.address_details{
+    background: #f7f7f8;
+    text-align: center;
+    padding: 24px;
+    min-height: 400px;
+}
+.address_details h2{
+    font-size: 40px;
+    font-family: cursive;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    color: #447663;
+}
+.address_details .google-maps{
+    max-width: 700px;
+    margin: auto;
+    height: 250px;
+
+}
+.address_details section{
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 24px;
+}
+.address_details section>.heading{
+    font-size: 20px;
+    color: #54927a;
+    font-weight: 500;
+}
+.address_details p.subtext{
+    color: #777;
+    font-size: 16px;
+}.address_details{
+    background: #f7f7f8;
+    text-align: center;
+    padding: 24px;
+    min-height: 400px;
+}
+.address_details h2{
+    font-size: 40px;
+    font-family: cursive;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    color: #447663;
+}
+.address_details .google-maps{
+    max-width: 700px;
+    margin: auto;
+    height: 300px;
+
+}
+.address_details section{
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 24px;
+}
+.address_details section>.heading{
+    font-size: 20px;
+    color: #54927a;
+    font-weight: 500;
+}
+.address_details p.subtext{
+    color: #777;
+    font-size: 16px;
+}.address_details{
+    background: #f7f7f8;
+    text-align: center;
+    padding: 24px;
+    min-height: 400px;
+}
+.address_details h2{
+    font-size: 40px;
+    font-family: cursive;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    color: #447663;
+}
+.address_details .google-maps{
+    max-width: 700px;
+    margin: auto;
+    height: 200px;
+
+}
+.address_details section{
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 24px;
+}
+.address_details section>.heading{
+    font-size: 20px;
+    color: #54927a;
+    font-weight: 500;
+}
+.address_details p.subtext{
+    color: #777;
+    font-size: 16px;
+}

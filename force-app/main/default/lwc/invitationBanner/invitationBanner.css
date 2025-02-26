@@ -1,0 +1,119 @@
+/* :host(){
+    margin: -12px;
+} */
+
+.banner{
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.main-details{
+    padding: 70px 24px 24px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: serif;
+}
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    margin-bottom: 24px;
+}
+.wedding-info{
+   text-align: center;
+
+}
+.wedding-info p{
+    display: block;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    opacity: 0.8;
+    font-weight: 500;
+       /* #555555 */
+    color: var(--dxp-s-body-text-color);
+    font-size: 20px;
+}
+
+.wedding-info h1{
+    /*#447663*/
+    color: var(--dxp-g-brand);
+    font-size: 28px;
+    font-weight: 500;
+}
+.wedding-info h1>em {
+    display: block;
+    font-size: 56px;
+    font-family: cursive;
+    font-weight: 600;
+    letter-spacing: 6px;
+
+}
+.wedding-info h4{
+       /* #555555 */
+    color: var(--dxp-s-body-text-color);
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 16px;
+    
+}
+.countdown{
+    display: flex;
+    justify-content: space-between;
+}
+
+.countdown .container_count {
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    text-align: center;
+    width: 130px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 56px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 630px) {
+    .wedding-info h1{
+        font-size: 22px;
+    }
+    .wedding-info h1>em {
+        font-size: 32px;
+    }
+    .wedding-info h4{
+        font-size: 22px;
+    }
+    .countdown .container_count {
+        width: 80px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+    }
+    .banner{
+        background-size: inherit;
+    }
+}
+@media only screen and (max-width:720px) {
+    .countdown{
+        min-width: 380px;
+        justify-content: space-evenly;
+    }
+    .countdown .counter{
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+    .banner{
+        background-size: inherit;
+    }
+    .event-info h1, .event-info h4{
+        font-size: 22px;
+    }
+    .event-info h1>em{
+        font-size: 32px;
+    }
+}

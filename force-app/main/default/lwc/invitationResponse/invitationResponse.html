@@ -1,0 +1,37 @@
+<template>
+    <div class="rsvp_details">
+        <h2>RSVP</h2>
+        <template lwc:if={rsvpMessage}>
+            <p class="rsvpMessage">{rsvpMessage}</p>
+        </template>
+        <template lwc:else>
+        <p class="subheading">Please Respond By <lightning-formatted-date-time
+            value={rsvpDetailsInfo.Respond_By__c}
+            year="numeric"
+            day="2-digit"
+            month="long"></lightning-formatted-date-time>
+        </p>
+        <form onsubmit={submitHandler}>
+            <lightning-input type="text" label="Name" name="Name" required onchange={changeHandler}></lightning-input> 
+            <lightning-input type="email" label="Email" name="Email" required onchange={changeHandler}></lightning-input> 
+            <lightning-input type="tel" label="Phone" name="Phone" required onchange={changeHandler}></lightning-input> 
+            <lightning-radio-group
+            label="RSVP"
+            name="Response"
+            type="radio"
+            required
+            options={rsvpOptions}
+            onchange={changeHandler}></lightning-radio-group>
+            <lightning-input type="number" label="Number of additional Guests" onchange={changeHandler} name="additionalGuests"></lightning-input> 
+            <lightning-textarea
+            label="Additional comments or special requests"
+            name="additionalComment"
+            onchange={changeHandler}></lightning-textarea>
+            <div class="footer">
+                <button class="slds-button slds-button_neutral" type="submit">Submit</button>
+            </div>
+           
+        </form>
+        </template>
+    </div>
+</template>
