@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invitation_Accepted_Count__c</fullName>
+    <label>Invitation Accepted Count</label>
+    <summaryFilterItems>
+        <field>Invitation_Response__c.Response__c</field>
+        <operation>equals</operation>
+        <value>Joyfully Accept</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Invitation_Response__c.Invitation__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>
